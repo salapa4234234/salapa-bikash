@@ -1,0 +1,167 @@
+.emi_detail {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 auto 50px;
+    box-shadow: 0 0 25px -3px rgba(0, 0, 0, .3);
+}
+
+.flex-row {
+    align-items: center;
+}
+
+/* start First Part */
+
+.first-part {
+    flex: 0 0 100%;
+}
+
+.first-part .title-header {
+    background-color: #4b9d43;
+    color: #fff !important;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+#icicitools_loan_HomeLoanEMIInputPanel_0 {
+    padding: 0;
+}
+
+#icicitools_loan_HomeLoanEMIInputPanel_0 .title-header {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+#homeLoanEMIEMIForm {
+    padding: 20px;
+}
+
+#homeLoanEMIEMIForm .form-group {
+    margin-bottom: 25px;
+    border-bottom: 1.5px solid #e6e6e6;
+    padding-bottom: 9px;
+}
+
+#homeLoanEMIEMIForm .form-group:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.form-group .noselect {
+    margin: 0 0 16px;
+    color: #4b9d43;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.input-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.sliderText {
+    height: auto;
+    color: #058100;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    border-radius: 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.sliderText:hover {
+    border: 1px solid #ddd;
+}
+
+.term-text {
+    width: auto;
+    margin: 0 0 15px;
+    color: #000;
+}
+
+.rangeslider--horizontal {
+    height: 6px;
+}
+
+.rangeslider, .rangeslider__fill {
+    border-radius: 0;
+}
+
+.rangeslider__handle {
+    background: #ffffff;
+    border: 1px solid #5cb353;
+}
+
+/* Start Second Part */
+
+.second-part {
+    flex: 0 0 100%;
+    padding: 20px;
+    background-color: #320d3c !important;
+}
+
+.result-wrap {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #320d3c !important;
+}
+
+.homeLoanEMI {
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.homeLoanEMI span {
+    display: block;
+    margin: 0 0 30px;
+    padding: 15px 0 25px;
+    border-bottom: 1px solid #aa8db3;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.gu5 h3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0 0 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.gu5 h3 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+@media(min-width: 768px) {}
+
+@media(min-width: 1024px) {
+    .first-part {
+        flex: 0 0 70%;
+    }
+    .second-part {
+        flex: 0 0 30%;
+    }
+}
+
+@media(min-width:1200px) {
+    .emi_detail {
+        width: 1136px;
+    }
+    .sliderText {
+        font-size: 28px;
+    }
+}
+
+.gu5 span {
+    padding-top: 5px;
+}

@@ -1,0 +1,22 @@
+RewriteEngine On
+RewriteRule ^main?$ index.php
+RewriteRule ^main/([a-z0-9A-Z-]+)	index.php?topic=$1 
+RewriteRule ^article/([a-z0-9A-Z=-]+)/([a-z0-9A-Z-]+) index.php?topic=$1&id=$2
+
+#Gallery_image_View
+RewriteRule ^galleries/([a-z0-9A-Z=-]+)/([a-z0-9A-Z-]+) index.php?topic=$1&view=$2
+
+#Virtual_Program
+RewriteRule ^virtualprograms/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+) index.php?topic=$1&class=$2&subject=$3&unit=$4
+
+RewriteRule ^virtualprograms/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+) index.php?topic=$1&class=$2&subject=$3
+
+RewriteRule ^virtualprograms/([a-z0-9A-Z=-]+)/([a-z0-9A-Z=-]+) index.php?topic=$1&class=$2
+
+#videoplayer.php
+RewriteRule ^videoplayer/([a-z0-9A-Z=-]+) includes/videoplayer.php?id=$1
+
+
+
+
+

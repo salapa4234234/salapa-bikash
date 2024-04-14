@@ -1,0 +1,104 @@
+.intro-section {}
+
+.intro-section p {
+    color: #777777;
+    font-family: 'Montserrat-Medium';
+    line-height: 24px;
+}
+
+/* ============= End Slider Show Section ============= */
+
+.slider-show {
+    position: relative;
+    padding: 90px 0;
+    background-color: #058100;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slider-show h2 {
+    margin: 0 0 40px;
+}
+
+.slider-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: #fff;
+}
+
+.slider-bottom h3 {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Montserrat-Semibold';
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.parallax-img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    filter: blur(2px);
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.shares {
+    width: 56%;
+}
+
+.shares .types {
+    display: block;
+    margin: 0 0 18px;
+}
+
+.shares .types:last-child {
+    margin: 0;
+}
+
+.shares .types>span {
+    margin: 0 0 3px;
+}
+
+.shares .types span {
+    display: block;
+}
+
+.progress-num {
+    width: 100%;
+    height: 6px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.progress-num span:first-child {
+    height: 100%;
+    background-color: #8fc446;
+}
+
+.progress-num span:last-child {
+    position: absolute;
+    top: -9px;
+    left: 105%;
+    font-family: 'Montserrat-Semibold';
+}
+
+@media(min-width: 768px) {
+    .slider-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+    .shares {
+        width: calc(100% / 3);
+        margin: 0 13.5% 0 0;
+    }
+}
+
+@media(min-width: 1365px) {
+    .shares {
+        width: 250px;
+    }
+}
+
+/* ============= End Slider Show Section ============= */

@@ -1,0 +1,373 @@
+*{
+    outline:none;
+}
+label {font-family: 'Montserrat-Semibold';}
+.career-listing { font-size: 14px; color: rgb(0,0,0); }
+.select2.select2-container.select2-container--default { border: 1px solid rgb(221, 221, 221); margin: 0; }
+/*============================Form Apply============================*/
+.career-listing thead th { text-transform: uppercase; }
+.form-apply { color: rgb(119, 119, 119); font-size: 14px; }
+.form-apply h4 { background-color: rgb(99, 51, 113); color: rgb(255, 255, 255); margin: 0 -15px 15px; padding: 10px; }
+.career-section-wrap { border: 1px solid rgb(238, 238, 238); margin: 0 0 30px; padding: 0 15px 15px; }
+
+.career-section-wrap h4 {font-size: 20px;}
+.career-sub-section h5 { margin: 20px 0; position: relative;font-size:14px; }
+.career-sub-section h5:after { width: 30px; height: 3px; background-color:rgb(99, 51, 113); position: absolute; bottom: -10px; left: 0; content: ""; }
+.form-apply .form-control { background-color: rgb(255, 255, 255); height: 30px;  border-radius: 0;  box-shadow: none;}
+.form-apply .form-control:focus { box-shadow: none; border: 1px solid rgb(221, 221, 221); }
+.form-apply label { font-weight: normal; }
+.form-apply .select2.select2-container.select2-container--default { border: 1px solid rgb(221, 221, 221); }
+.form-apply .select2-container--default .select2-selection--single { background-color: rgb(255, 255, 255); }
+.career-section-wrap .table.table-default { margin: 0 0 15px; }
+.career-section-wrap .table.table-default thead tr th { background-color: rgb(62, 62, 62); padding: 4px 8px;   vertical-align: middle;}
+.career-section-wrap .table.table-default thead:first-child tr th { background-color: rgb(67, 15, 82); }
+.career-section-wrap .table.table-default tbody tr td { padding: 10px; }
+.btn-wrapper { text-align: right; }
+.form-apply .btn-add-table, .form-apply .btn-add-edu, .form-apply .btn-remove-table, .form-apply .btn-remove-edu, .btn-wrapper .btn-submit-career { color: rgb(255, 255, 255); margin: 0 0 15px; padding: 5px 15px; transition: 400ms ease; }
+.form-apply .btn-add-table, .form-apply .btn-add-edu, .btn-wrapper .btn-submit-career { background-color: #058100; border: 1px solid #058100; display: inline-block; }
+.form-apply .btn-remove-table, .form-apply .btn-remove-edu { background-color: rgb(99, 51, 113); border: 1px solid rgb(99, 51, 113); display: inline-block; }
+.form-apply .btn-remove-table:hover, .form-apply .btn-remove-edu:hover, .form-apply .btn-remove-table:focus, .form-apply .btn-remove-edu:focus { background-color: transparent; color: rgb(99, 51, 113); }
+.form-apply .btn-add-table:hover, .form-apply .btn-add-edu:hover, .form-apply .btn-add-table:focus, .form-apply .btn-add-edu:focus, .btn-wrapper .btn-submit-career:hover, .btn-wrapper .btn-submit-career:focus { background-color: transparent; color: rgb(62, 62, 62); }
+.career-section-wrap .form-group { position: relative; }
+.career-section-wrap span.error { width: auto; left: auto; right: 0; top: 0; display:inline-block; font-size: 13px;  color: red; }
+/*============================Job detail page============================*/
+.job-detail-wrap { border: 1px solid rgb(242, 242, 242); color: rgb(119, 119, 119); padding: 15px 0; margin-bottom: 30px; }
+.job-desc { border-bottom: 1px dashed; display: block; margin: 0 0 10px; padding: 5px 15px; }
+.job-desc:last-child { border-bottom: none; margin: 0; }
+.job-title { color: rgb(228, 49, 52); display: inline-block; font-weight: 700; margin: 0 15px 5px 0; position: relative; text-transform: uppercase; width: 160px; }
+.job-title::after { content: ":"; position: absolute; right: 0; top: 0; }
+.job-detail { display: inline-block; }
+/*============================Job detail page============================*/
+#intern-form input.form-control,#intern-form textarea.form-control, #intern-form .select2-container--default .select2-selection--single { border-radius: 0; box-shadow: none; }
+#intern-form .select2.select2-container.select2-container--default { height: 34px; background-color: rgb(248, 248, 248); }
+#intern-form span.error { left: auto; right: 0; top: 0; width: 160px; color: red; }
+.table-responsive table td {
+    position:relative;
+}
+.title-header {
+    margin: 0 0 30px;
+    font-size: 32px;
+    font-family: 'Montserrat-Bold';
+    color: #058100;
+}
+.table-responsive table td span.error {
+    top: -2px !important;
+    left:10px;
+    right: auto;
+    font-size: 11px !important;
+}
+.customize-upload {
+    position: relative;
+}
+.file-uploader label {
+    width: 100%;
+}
+.fileUpload {
+    background-color: #058100;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 34px;
+    overflow: hidden;
+    padding: 8px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    text-transform: uppercase;
+}
+/*Loader*/
+.process-wrap { align-items: center; background-color: rgba(0, 0, 0, 0.4); display: flex; height: 100%; justify-content: center; left: 0; position: absolute; top: 0; width: 100%; z-index: 99999; }
+.process { margin: 100px auto; font-size: 25px; width: 1em; height: 1em; border-radius: 50%; position: relative; text-indent: -9999em; -webkit-animation: load5 1.1s infinite ease; animation: load5 1.1s infinite ease; -webkit-transform: translateZ(0); -ms-transform: translateZ(0); transform: translateZ(0); }
+@-webkit-keyframes load5 {
+    0%,  100% {
+        box-shadow: 0em -2.6em 0em 0em #ffffff, 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.5), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+    }
+    12.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7), 1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+    }
+    25% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff, 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    37.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5), 2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff, 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.5), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff, -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    62.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5), 0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff, -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    75% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.5), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff, -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    87.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+    }
+}
+@keyframes load5 {
+    0%,  100% {
+        box-shadow: 0em -2.6em 0em 0em #ffffff, 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.5), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+    }
+    12.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7), 1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+    }
+    25% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff, 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    37.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5), 2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff, 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.5), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff, -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2), -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    62.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5), 0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff, -2.6em 0em 0 0em rgba(255, 255, 255, 0.2), -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    75% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.5), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff, -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    }
+    87.5% {
+        box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2), 1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2), 2.5em 0em 0 0em rgba(255, 255, 255, 0.2), 1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2), 0em 2.5em 0 0em rgba(255, 255, 255, 0.2), -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5), -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+    }
+}
+
+.career-section-wrap > .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.custom-file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.custom-file-input + label {
+    height: 30px;
+    display: block;
+    padding: 6px 12px;
+    background-color: rgb(248, 248, 248);
+    color: #555;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.select2-container ul li:before{
+    display: none;
+}
+/* for disabling  the red list style appearing on the lists */
+.select2-selection.select2-selection--single {
+    border: aliceblue;
+}
+.select2-selection.select2-selection--single :focus{
+    border: none;
+    outline:none;
+}
+
+/*for career listing*/
+.flex-row {
+    align-items: flex-end;
+}
+.section-career {
+    background-color: #f7f7f7;
+}
+.section-career figure {
+    overflow: hidden;
+    border-radius: 10px;
+}
+.section-career article {
+    padding: 50px;
+}
+.section-career article span {
+    font-size: 16px;
+}
+.section-career article h2 {
+    margin: 15px 0 20px;
+}
+.btn-joinus {
+    display: inline-block;
+    margin: 18px 0 0;
+    padding: 8px 30px;
+    background-color: #058100;
+    border: 1px solid #058100;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.btn-joinus:hover {
+    background-color: #fff;
+    color: #058100;
+}
+
+.job-openings-section {
+    background-repeat: no-repeat !important;
+    background-position: top right !important;
+    background-size: cover !important;
+    background-blend-mode: color;
+}
+
+.job-openings-section .vacancy-wrap {max-height: 620px; width: 100%;  font-size: 14px; color: rgb(0,0,0); }
+.job-openings-section h1 {
+    display: none;
+}
+.job-openings-section h2 {
+    width: 100%;
+    margin: 0 0 30px;
+}
+
+@media(min-width:1200px) {
+    .job-openings-section {
+        background: url(../../img/bg-career-side.jpg), linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 59%,rgba(255,255,255,0) 100%);
+    }
+    .job-openings-section .career-listing {width: 70%;}
+    .job-openings-section .vacancy-wrap {padding: 0 40px 0 0;}
+}
+/*job Listing start*/
+.job-lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #adadad;
+    transition: 300ms ease;
+}
+.job-lists:hover {
+    box-shadow: 0 18px 22px -15px rgba(0,0,0,.3);
+}
+.job-lists > * {
+    /*transition: 300ms ease;*/
+}
+.job-lists span {
+    display: none;
+}
+.job-lists p {
+    margin: 0;
+    font-family: 'Montserrat-Medium';
+    word-break: break-all;
+}
+.job-areas-1 {
+    display: none;
+}
+.job-title-date-wrap {
+    width: 25%;
+}
+.job-areas-2 h6 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    line-height: 22px;
+}
+.job-areas-3, .job-areas-4 {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+}
+.job-areas-3 span, .job-areas-4 span {
+    display: inline-block;
+    font-family: 'Montserrat-Regular';
+    color: #777;
+    font-size: 12px;
+}
+.job-areas-3 p, .job-areas-4 p {
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Montserrat-Regular';
+}
+
+.job-desc-wrap {
+    max-height: 70px;
+    width: 60%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.btn-view-job-desc {
+    width: 15%;
+    padding: 10px 10px;
+    background-color: #058100;
+    border: 1px solid #058100;
+    color: #fff;
+}
+.btn-view-job-desc:hover {
+    background-color: #fff;
+    color: #058100;
+    box-shadow: 0 8px 10px -3px rgba(0,0,0,.3);
+}
+
+.btn-apply-job {
+    width: 15%;
+    display: none;
+    margin: 0 0 0 auto;
+    padding: 10px 10px;
+    background-color: #ADCF47;
+    border: 1px solid #ADCF47;
+    color: #fff;
+    text-align: center;
+}
+
+.btn-apply-job:hover {
+    background-color: transparent;
+    color: #ADCF47;
+    box-shadow: 0 8px 10px -3px rgba(0,0,0,.3);
+}
+
+@media(max-width: 1023px){
+    .job-title-date-wrap {
+        width: 100%;
+    }
+    .job-desc-wrap {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+    .btn-view-job-desc,
+    .btn-apply-job{
+        width: auto;
+    }
+}
+
+/*on Career open*/
+.job-lists.open {
+    /*flex-direction: column;*/
+}
+.job-lists.open .job-title-date-wrap,
+.job-lists.open .job-desc-wrap {
+    width: 100%;
+}
+
+.job-lists.open .job-areas-3, .job-lists.open .job-areas-4 {
+    display: inline-flex;
+    margin: 0 15px 0 0;
+}
+.job-lists.open .job-areas-3 span, .job-lists.open .job-areas-4 span {
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    margin: 0 15px 15px 0;
+}
+
+.job-lists.open .job-desc-wrap {
+    max-height: 10000px;
+    margin: 0 0 30px;
+    padding: 0;
+}
+.job-lists.open  .btn-apply-job {
+    display: inline-block;
+    margin-right: 30px;
+}

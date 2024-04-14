@@ -1,0 +1,172 @@
+.atm-branch-section {
+    position: relative;
+}
+
+#atm-branch {
+    width: 100%;
+    height: 650px;
+}
+
+.atm-branch-section .container {
+    position: relative;
+}
+
+.search-wrap {
+    box-shadow: 0 0 25px -3px rgba(0, 0, 0, .3);
+}
+
+.btn-toggle-search-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.search-holder .btn-toggle-search-back svg {
+    width: 32px;
+}
+
+.btn-toggle-search-back:hover svg path {
+    fill: #058100;
+}
+
+.search-holder {
+    width: calc(100% - 30px);
+    height: 100%;
+   position: relative;
+    padding: 20px 25px;
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0.9) 100%);
+    box-shadow: 13px 0 72px -18px rgba(0, 0, 0, .3);
+    transition: 300ms ease;
+    overflow: hidden;
+    z-index:9999;
+}
+
+.search-holder.minimize {
+    height: 70px;
+    transform: scale(.7);
+    transform-origin: top left;
+}
+
+.search-holder h4 {
+    font-size: 16px;
+    margin: 0 0 20px;
+    line-height: 36px;
+}
+
+.search-holder .form-group {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.search-holder svg {
+    width: 20px;
+    margin: 0 15px 0 0;
+}
+
+.search-holder input, .search-holder select {
+    width: calc(100% - 35px);
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid #777;
+    font-weight: 500;
+}
+
+.search-holder .select2-container--default .select2-selection--single {
+    border: none;
+    border-bottom: 1px solid #777;
+}
+
+.search-holder .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 0;
+}
+
+.btn-find {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px auto 0;
+    padding: 6px 15px;
+    border: 1px solid #058100;
+    border-radius: 0;
+    background-color: transparent;
+    color: #058100;
+    font-weight: 600;
+    transition: 300ms ease;
+}
+
+.btn-find svg path {
+    fill: #058100;
+    transition: 300ms ease;
+}
+
+.btn-find:hover {
+    background-color: #058100;
+    color: #fff;
+}
+
+.btn-find:hover svg path {
+    fill: #fff;
+}
+
+.list-location {
+    height: 380px;
+    margin: 40px 0 0 !important;
+}
+
+.list-location li {
+    margin: 0;
+    padding: 0;
+}
+
+.list-location li::before, .list-location li::after {
+    display: none;
+}
+
+.branch-atm {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    text-align: left;
+    transition: 300ms ease;
+}
+
+.list-location li:first-child .branch-atm {
+    border-top: 1px solid #ddd;
+}
+
+.branch-atm:hover {
+    background-color: #fcfcfc;
+}
+
+.branch-atm i {
+    margin: 0 0 0 auto;
+}
+
+@media(min-width: 768px) {
+    .search-holder {
+        width: 350px;
+        height:650px;
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+    .search-holder h4 {
+        font-size: 20px;
+    }
+}

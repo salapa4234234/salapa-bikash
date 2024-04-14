@@ -1,0 +1,29 @@
+
+
+
+/* accordion style */
+
+.ac-pane { margin-bottom: 1px; color:#fff;}
+
+.ac-pane:last-child { margin-bottom: 0; }
+
+.ac-content { display: none; }
+
+.ac-title {
+  border: 1px solid #fff;
+  color: #fff;
+  display: block;
+  padding: 8px;
+  background-color:#f5b87b;
+}
+
+.ac-title i {
+  float: right;
+  font-size: 20px;
+}
+
+.ac-title i:before { content: "\f107"; }
+
+.active .ac-title i:before { content: "\f106"; }
+
+

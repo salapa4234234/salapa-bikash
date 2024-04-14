@@ -1,0 +1,74 @@
+.flex-row {
+    justify-content: center;
+}
+
+.teams {
+    position: relative;
+    margin: 0 0 30px;
+    padding: 270px 15px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden;
+}
+
+.teams figure {
+    width: 100%;
+    height: 250px;
+    margin: 0 0 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    filter: grayscale(2);
+    overflow: hidden;
+    transition: 400ms ease;
+}
+
+.teams:hover figure {
+    height: 320px;
+    filter: grayscale(0);
+}
+
+.teams figure img {
+    width: 100%;
+}
+
+.teams h5 {
+    margin: 0 0 5px;
+}
+
+.teams span {
+    color: #777777;
+}
+
+.content-middle {
+    width: 750px;
+    font-size: 16px;
+    color: #777777;
+    line-height: 26px;
+}
+
+.highlighted-position .teams {
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+@media(min-width: 768px) {
+    .highlighted-position .teams {
+        width: 30.33%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .highlighted-position .teams {
+        width: 23.33%;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    .col-xs-12.col-md-3 {
+        width: 33.333%;
+    }
+}

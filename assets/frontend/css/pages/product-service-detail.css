@@ -1,0 +1,21 @@
+h5 {
+    color: #058100;
+    font-family: 'Montserrat-Semibold';
+}
+
+p {
+    margin: 0 0 15px;
+    color: #777;
+    font-family: 'Montserrat-Medium';
+}
+
+ul {
+    margin: 0 0 15px;
+    color: #777;
+    font-family: 'Montserrat-Medium';
+}
+.product-banner {
+	width: 66.66666667%;
+    box-shadow: 0 3px 14px 0 rgba(0,0,0,.3);
+    margin: 0 auto 50px;
+}

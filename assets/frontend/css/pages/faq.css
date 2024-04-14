@@ -1,0 +1,95 @@
+.accordion {
+    max-height: 47px;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: hidden;
+    transition: 600ms ease 100ms;
+}
+
+.accordion.open {
+    max-height: 1000px;
+}
+
+.accordion>*:not(h6) {
+    padding: 0 0 0 35px;
+}
+
+.accordion h6 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.accordion a {
+    color: #058100;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.accordion p+a {
+    margin: 0 0 10px;
+}
+
+.accordion-toggle {
+    width: 100%;
+    position: relative;
+    padding: 10px 0 0 33px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    font-family: 'Montserrat-Medium';
+    text-align: left;
+}
+.accordion.open .accordion-toggle {
+    color: #633371
+}
+.accordion-toggle span {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 -33px;
+    border: 2px solid #9d9d9d;
+    border-radius: 50%;
+    vertical-align: top;
+    transition: 300ms ease;
+}
+
+.accordion.open .accordion-toggle span {
+    border-color: #633371
+}
+
+.accordion-toggle span:before, .accordion-toggle span:after {
+    content: "";
+    position: absolute;
+    background-color: #9d9d9d;
+    transition: 300ms ease;
+}
+
+.accordion.open .accordion-toggle span:before, .accordion.open.accordion-toggle span:after {
+    background-color: #058100;
+}
+
+.accordion-toggle span:before {
+    width: 14px;
+    height: 2px;
+    left: 2px;
+    top: 8px;
+}
+
+.accordion-toggle span:after {
+    height: 14px;
+    width: 2px;
+    left: 8px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.accordion.open .accordion-toggle span:after {
+    height: 0;
+}
+
+.accordion ul:not(:last-child) {
+    margin: 0 0 20px;
+}

@@ -1,0 +1,24 @@
+.block-bordered-listing {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 15px 0;
+}
+.block-bordered-listing li {
+    min-width: calc(100% / 5);
+    margin: 0 0 20px;
+    padding: 0 15px;
+    text-align: center;
+}
+.block-bordered-listing a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border: 1px solid #777;
+    color: #000;
+}
+.block-bordered-listing a:hover {
+    background-color: #058100;
+    color: #FFF;
+}

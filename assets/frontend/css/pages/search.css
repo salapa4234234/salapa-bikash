@@ -1,0 +1,22 @@
+main {
+    background-color: #eeeeee;
+}
+
+.search-list {
+    padding: 30px 30px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.search-list h4 {
+    font-weight: 600;
+    color: #058100;
+}
+
+.search-list h4 a {
+    color: #058100;
+}
+
+.search-list h4 a:hover {
+    text-decoration: underline;
+}
