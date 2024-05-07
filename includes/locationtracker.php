@@ -190,13 +190,18 @@
 		?>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="single-page-header-right">
-              <ol class="breadcrumb">
-                <li><a href="main/<?php echo base64_encode($data1['link']); ?>">
+              <ol class="breadcrumb  ">
+                <span class="desktop">                <li><a href="main/<?php echo base64_encode($data1['link']); ?>">
                         <?php echo $dat['menu']; ?>
                     </a></li>
                 <li style="color:#CF3;"><?php echo $data1['submenu']; ?></li>
+                <li class="active"><?php echo $data['child']; ?></li></span>
+                <span class="mobile">
+                <li style="color:white;">.../ </li>
                 <li class="active"><?php echo $data['child']; ?></li>
+                </span>
               </ol>
+  
             </div>
           </div>
 		<?php
@@ -205,12 +210,23 @@
 				?>
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="single-page-header-right">
-              <ol class="breadcrumb">
+            <ol class="breadcrumb  ">
+                <span class="desktop">                   <li><a href="main/<?php echo base64_encode($data1['link']); ?>">
+                        <?php echo $data1['menu']; ?>
+                    </a></li>
+                <li class="active"><?php echo $data['submenu']; ?></li>
+        </span>
+        <span class="mobile">
+                <li style="color:white;">.../ </li>
+                <li class="active"><?php echo $data['submenu']; ?></li>
+                </span>
+              </ol>
+              <!-- <ol class="breadcrumb">
                 <li><a href="main/<?php echo base64_encode($data1['link']); ?>">
                         <?php echo $data1['menu']; ?>
                     </a></li>
                 <li class="active"><?php echo $data['submenu']; ?></li>
-              </ol>
+              </ol> -->
             </div>
           </div>
         <?php

@@ -14,6 +14,7 @@
                 <span>Contact Us</span> 
             </a> 
         </nav>
+        <!-- <div>Your easy financial partner!</div> -->
         <div class="option-right">
             <button class="btn-forex" type="button">
                 <img src="them_img/icon/topmenu/quickcontact.png" alt="">

@@ -49,7 +49,7 @@
 					echo "main/".base64_encode($data['link']); 
 				}
 				?>"> 
-                <img src="them_img/icon/<?php echo $data['icon'];?>" alt=""> 
+                <!-- <img src="them_img/icon/<?php echo $data['icon'];?>" alt="">  -->
                     <?php echo $data['menu']; ?> 
                 </a>
 			<?php
