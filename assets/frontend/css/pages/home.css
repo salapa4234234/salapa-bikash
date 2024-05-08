@@ -84,7 +84,13 @@
   outline-color: #b7e437;
   color: red;
 }
-
+.new-title {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #058100;
+  text-align: center;
+  padding: 3.7rem 0px;
+}
 .border-link {
   width: calc(100% + 10px);
   height: calc(100% + 10px);
@@ -978,10 +984,14 @@
 }
 
 .pop-container {
+  border-radius: 10px;
+  padding: 2rem;
   width: 100%;
   max-width: 600px;
   position: relative;
   box-shadow: 0 0 80px 30px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  background-color: #fff;
 }
 
 .popup.is-visible {
@@ -995,6 +1005,8 @@
 .popup .item img {
   width: 100%;
   margin: 0;
+  object-fit: contain;
+  height: 100%;
 }
 
 .popup .popup-close {
@@ -1373,19 +1385,19 @@ footer {
 }
 
 .social-links a {
-  color: var(--text-color);
+  color: white;
   text-decoration: none;
 }
 
 .social-links svg {
   width: 2.5rem;
   height: 2.5rem;
-  stroke: var(--text-color);
+  stroke: white;
   transition: all 0.2s ease-in-out;
 }
 
 .social-links svg:hover {
-  stroke: var(--headline-color);
+  stroke: white;
 }
 
 .social-links ul {
@@ -1439,7 +1451,7 @@ footer {
 .link-columns h3 {
   color: var(--headline-color);
   margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
 }
 
 /*? nabarj bottom */
@@ -1488,7 +1500,8 @@ footer {
   display: grid;
   grid-gap: 1rem;
   user-select: none;
-  padding: 6rem 0px;
+  padding: 0px;
+  padding-bottom: 3rem;
   gap: 2.5rem;
 }
 .card-info:hover {

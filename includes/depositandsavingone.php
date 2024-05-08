@@ -8,6 +8,13 @@
    font-size: 1.5em;
    padding-top: 0px
 }
+
+.depositbox img {
+   width: 100%;
+   height: 100%;
+   object-fit: contain;
+
+}
 </style>
 <div class="container">
    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-anchor-placement="top-bottom">

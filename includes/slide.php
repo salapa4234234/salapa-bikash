@@ -38,12 +38,6 @@
                <div class="card-icon">
                   <img src="https://siteadmin.nabilbank.com/assets/backend/uploads/Banner%20Menu/interest.png" alt="">
                </div>
-               <div class="card-title">Information</div>
-            </div>
-            <div class="card">
-               <div class="card-icon">
-                  <img src="https://siteadmin.nabilbank.com/assets/backend/uploads/Banner%20Menu/interest.png" alt="">
-               </div>
                <div class="card-title">EMI Calculator</div>
             </div>
          </div>

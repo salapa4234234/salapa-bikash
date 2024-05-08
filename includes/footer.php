@@ -83,26 +83,23 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                         </li>
                         <li>
                            <a href="#" title="GitHub">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
-                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
                                  <path
-                                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                                    d="M13 24.002h-3a.5.5 0 0 1-.5-.5v-10.5H6a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3.5v-3.5c0-3.033 2.468-5.5 5.5-5.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3c-.827 0-1.5.673-1.5 1.5v3.5H18c.161 0 .312.077.405.208.095.13.12.298.069.451l-1 3a.501.501 0 0 1-.475.342h-3.5v10.5a.498.498 0 0 1-.499.499zm-2.5-1h2v-10.5a.5.5 0 0 1 .5-.5h3.64l.667-2H13a.5.5 0 0 1-.5-.5v-4c0-1.378 1.121-2.5 2.5-2.5h2.5v-2H15a4.505 4.505 0 0 0-4.5 4.5v4a.5.5 0 0 1-.5.5H6.5v2H10a.5.5 0 0 1 .5.5v10.5z">
+                                 </path>
                               </svg>
                            </a>
                         </li>
                         <li>
                            <a href="#" title="Discord">
-                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord"
-                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                 <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
-                                 <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" />
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram">
                                  <path
-                                    d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3" />
-                                 <path d="M7 16.5c3.5 1 6.5 1 10 0" />
+                                    d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z">
+                                 </path>
+                                 <path
+                                    d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z">
+                                 </path>
+                                 <circle cx="12.3" cy="3.7" r=".533"></circle>
                               </svg>
                            </a>
                         </li>
@@ -125,111 +122,88 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
             <div class="link-columns">
                <div>
                   <section>
-                     <h3>Product</h3>
+                     <h3>About Us</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Features">Database</a>
+                           <a href="#" title="Features">Introduction</a>
                         </li>
                         <li>
-                           <a href="#" title="Auth">Auth</a>
+                           <a href="#" title="Auth">Mission, Vision & Values</a>
                         </li>
                         <li>
-                           <a href="#" title="Functions">Functions</a>
+                           <a href="#" title="Functions">Board ot Directors</a>
                         </li>
                         <li>
-                           <a href="#" title="Realtime">Realtime</a>
+                           <a href="#" title="Realtime">Team Member</a>
                         </li>
                         <li>
-                           <a href="#" title="Storage">Storage</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Vector">Vector</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Pricing">Pricing</a>
+                           <a href="#" title="Storage">Banking hours</a>
                         </li>
                      </ul>
                   </section>
 
                   <section>
-                     <h3>Resources</h3>
+                     <h3>Support</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Support">Support</a>
+                           <a href="#" title="Support">Branches</a>
                         </li>
                         <li>
-                           <a href="#" title="Sitemap">System Status</a>
+                           <a href="#" title="Sitemap">Contact Us</a>
                         </li>
                         <li>
-                           <a href="#" title="Newsletter">Become a Partner</a>
+                           <a href="#" title="Newsletter">Downloads</a>
                         </li>
                         <li>
-                           <a href="#" title="Help Centre">Integrations</a>
-                        </li>
-                        <li>
-                           <a href="#" title="Investor">Experts</a>
+                           <a href="#" title="Help Centre">FAQ</a>
                         </li>
                      </ul>
                   </section>
                </div>
                <div>
                   <section>
-                     <h3>Developers</h3>
+                     <h3>Navigation</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Documentation">Documentation</a>
+                           <a href="#" title="Documentation">Home</a>
                         </li>
                         <li>
-                           <a href="#" title="Changelog">Changelog</a>
+                           <a href="#" title="Changelog">Notices</a>
                         </li>
                         <li>
-                           <a href="#" title="Contributing">Contributing</a>
+                           <a href="#" title="Contributing">Grienvance</a>
                         </li>
                         <li>
-                           <a href="#" title="OpenSource">Open Source</a>
-                        </li>
-                        <li>
-                           <a href="#" title="SupaSquad">SupaSquad</a>
-                        </li>
-                        <li>
-                           <a href="#" title="DevTo">DevTo</a>
-                        </li>
-                        <li>
-                           <a href="#" title="RSS">RSS</a>
+                           <a href="#" title="OpenSource">NRB Gunaso Portal</a>
                         </li>
                      </ul>
                   </section>
                   <section>
-                     <h3>Company</h3>
+                     <h3>Others</h3>
                      <ul>
                         <li>
                            <a href="#" title="Terms and services">
-                              Blog
+                              Career
                            </a>
                         </li>
                         <li>
                            <a href="#" title="Privacy Policy">
-                              Customer Stories
+                              Calculator
                            </a>
                         </li>
                         <li>
                            <a href="#" title="Careers">
-                              Careers
+                              Calender
                            </a>
                         </li>
                         <li>
                            <a href="#" title="Company">
-                              Company
+                              Interest Rate
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Terms Of Service">
-                              Terms of Service
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" title="Privacy Policy">
-                              Privacy Policy
+                           <a href="#" title="Company">
+                              Gallery
                            </a>
                         </li>
                      </ul>

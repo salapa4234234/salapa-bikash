@@ -163,7 +163,7 @@
     </nav>-->
    <header>
       <?php
-		include('includes/messenger.php');
+	
   	include('includes/topmenu.php');
   	include('includes/menu.php');
   ?>
@@ -176,7 +176,7 @@
    </main>
    <?php
 		include('includes/footer.php');
-
+      include('includes/messenger.php');
 
 	if($topic=="home")
 	{
