@@ -7,5 +7,6 @@ include('includes/ourproducthome.php');
 	include('includes/activitieshome.php');
 
 	include('includes/loanhome.php');
+	include('includes/calculator.php');
 
 ?>

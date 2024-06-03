@@ -187,7 +187,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Privacy Policy">
+                           <a href="./calculator.php" title="Privacy Policy">
                               Calculator
                            </a>
                         </li>
