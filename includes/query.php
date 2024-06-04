@@ -3,7 +3,7 @@
       <div class="container text-center contact-main">
          <h2 class="text-white text-semi-bold text-uppercase">Want advice or know what you are looking for?</h2>
          <p class="text-white ">
-            If you have any query about our products or our services please feel free to contact us.
+         Need advice or already know what you're looking for? We're here to help you every step of the way. Reach out to our experts or dive straight into our tailored solutions!
          </p>
          <a class="btn-contact" href="main/<?php echo base64_encode('contactus'); ?>"> GO FROM HERE</a>
       </div>
