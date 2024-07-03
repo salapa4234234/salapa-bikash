@@ -96,11 +96,10 @@ summary:focus {
     color: black;
     min-width: 200px;
     overflow-x: auto;
+    scrollbar-width: thin;
 }
 
-/* .tab::-webkit-scrollbar {
-  display: none;
-} */
+
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -116,11 +115,7 @@ summary:focus {
     text-wrap: nowrap;
 }
 
-/* Change background color of buttons on hover */
-/* .tab button:hover {
-    background-color: white;
-    color: black;
-} */
+
 
 /* Create an active/current tablink class */
 .tab button.active {
@@ -138,13 +133,11 @@ summary:focus {
 }
 
 .report-tab {
-    /* display: table; */
     width: 100%;
 }
 
 .report-tabs {
     width: 100%;
-    /* overflow-x: auto; */
 }
 
 .tabs-container {
@@ -307,11 +300,12 @@ summary:focus {
                                 </svg>
                             </summary>
                             <div class="faq-content">
-                            <ul>
-                                 <li><a href="../../files/contentFile/042internship.pdf" target="_blank">Q3 of Fiscal Year 2080-81</a></li>
-                                 <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
-                                 <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
-                                 <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
+                                <ul>
+                                    <li><a href="../../files/contentFile/042internship.pdf" target="_blank">Q3 of Fiscal
+                                            Year 2080-81</a></li>
+                                    <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
+                                    <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
+                                    <li><a href="#">Q3 of Fiscal Year 2080-81</a></li>
                                 </ul>
                             </div>
                         </details>
