@@ -41,6 +41,9 @@
 	elseif($topic=="investorralations" && $tid=="no"){
 		include('includes/investorralation.php');	
 	}
+	elseif($topic=="disclosure" && $tid=="no"){
+		include('includes/disclosure.php');	
+	}
 	elseif($topic=="notices" && $tid=="no"){
 		include('includes/notices.php');	
 	}
@@ -65,6 +68,9 @@
 	}
 	elseif($topic=="career"){
 		include('includes/career.php');
+	}
+	elseif($topic=="interestrate"){
+		include('includes/interestrate.php');
 	}
 	else{
 		include('includes/view_point.php');

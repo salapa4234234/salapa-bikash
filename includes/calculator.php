@@ -246,8 +246,8 @@ tr:nth-child(even) {background-color: #366b3b; color:white; padding: 0.6rem;}
 <div class="calculator-wrapper">
    <div class="container">
       <div class="tab">
-         <button class="tablinks active" onclick="openCity(event, 'London')">Loan Calculator</button>
-         <button class="tablinks" onclick="openCity(event, 'Paris')">EMI Calculator</button>
+         <button class="tablinks active" onclick="openCity(event, 'London')">EMI Calculator</button>
+        <!-- <button class="tablinks" onclick="openCity(event, 'Paris')">EMI Calculator</button>*/ -->
       </div>
       <div id="London" class="tabcontent">
          <div class="calculator-wrapper">
@@ -277,9 +277,9 @@ tr:nth-child(even) {background-color: #366b3b; color:white; padding: 0.6rem;}
                </form>
             </div>
             <div class="calculator-footer-section">
-               <span>Monthly payment : 32423432423</span>
-               <span>Total payment : 32423432423</span>
-               <span>Total Interest : 32423432423</span>
+               <span>Monthly payment : 0</span>
+               <span>Total payment : 0</span>
+               <span>Total Interest : 0</span>
             </div>
          </div>
       </div>
@@ -311,7 +311,7 @@ tr:nth-child(even) {background-color: #366b3b; color:white; padding: 0.6rem;}
                </form>
             </div>
             <!-- <div class="calculator-footer-section" id="calculator">
-               <span>Monthly payment : 32423432423</span>
+               <span>Monthly payment : 0</span>
                <span>Total payment : 32423432423</span>
                <span>Total Interest : 32423432423</span>
             </div> -->

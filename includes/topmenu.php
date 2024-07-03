@@ -26,14 +26,13 @@
                 <span>Login</span>
                 </button>
                 <nav class="quick-link-drop"> 
-                    <a   href="webmail/" target="_blank">
-                        Webmail Login
+                    <a   href="https://outlook.office.com/" target="_blank">
+                        Email Login
                     </a> 
                     <a   href="cpanel/" target="_blank">
                         Cpanel Login
                     </a> 
                     <a   href="admin/" target="_blank">Admin Login</a> 
-                    <a   href="https://www.gmail.com" target="_blank">Gmail Login</a> 
                 </nav>
             </div> 
             <form class="search-wrap-box" method="get" action="index.php?topic=search">

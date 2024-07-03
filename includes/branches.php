@@ -71,7 +71,8 @@
 }
 
 .b-card {
-   height: 20px;
+   margin: 2rem 0px;
+   height: 22px;
    display: flex;
    align-items: center;
    justify-content: flex-start;
@@ -100,9 +101,6 @@
    word-break: break-word;
 }
 </style>
-<?php
-            if(!isset($_GET['id'])){
-        ?>
 <div class="container cwarp" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
    <div class="">
       <div style="color:#058100; text-align:center; font-size:2.4em; padding:20px 0px;font-weight:600;">
@@ -124,31 +122,31 @@
    </div>
    <div class="wrapper flex">
       <?php
-			$qry=$obj->select("select * from tbl_content where category='$topic'");
+			$qry=$obj->select("select * from tbl_branches where status='1' and feature ='1' and del ='1'");
 			while($data=mysqli_fetch_assoc($qry)){
 		?>
       <div class="depositlink">
          <div class="">
             <div class="depositbox">
                <h4>
-                  <span> <?php echo $data['mtitle']; ?></span>
+                  <span> <?php echo $data['name']; ?></span>
                </h4>
                <p class="b-card">
                   <span class="b-icon"><img src="includes/images/poeple.png" /> </span>
-                  <span class="b-title">Dipkar Rai</span>
+                  <span class="b-title"><?php echo $data['contactPersion'] ?></span>
                </p>
                <p class="b-card">
                   <span class="b-icon"><img src="includes/images/location.png" /> </span>
-                  <span class="b-title">Bakshila</span>
+                  <span class="b-title"><?php echo $data['address'] ?></span>
                </p>
                <p class="b-card"> <span class="b-icon"><img src="includes/images/mail.png" /> </span>
                   <span class="b-title">
-                     nabaraj2055@gmail.com
+                     <?php echo $data['email'] ?>
                   </span>
                </p>
                <p class="b-card"> <span class="b-icon"><img src="includes/images/phone-call.png" /> </span>
                   <span class="b-title">
-                     983555878
+                     <?php echo $data['contact']; ?>
                   </span>
                </p>
             </div>
@@ -159,11 +157,3 @@
 		?>
    </div>
 </div>
-<?php
-	}
-	else{
-		$id=$obj->htmlchar($_GET['id']);
-		$id=base64_decode($id);
-		include('includes/depositandsavingone.php');
-	}
-?>

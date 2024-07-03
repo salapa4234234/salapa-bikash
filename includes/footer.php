@@ -56,7 +56,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
       <div class="footer-wrapper">
          <div class="footer-columns">
             <div class="footer-logo-column">
-               <a href="/" aria-label="Go to Supabase homepage" title="Go to Supabase Homepage">
+               <a href="#" aria-label="Go to Supabase homepage" title="Go to Supabase Homepage">
                   <img style="border-radius: 9px;" src="https://salapabikasbank.com.np/them_img/edit30dipkar-rai.jpg"
                      loading="lazy" alt="Supabase logo" class="footer-logo" width="200">
                   <address class="text-white">
@@ -71,7 +71,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                   <div class='social-links'>
                      <ul>
                         <li>
-                           <a href="#" title="Twitter">
+                           <a href="<?php echo $companyData['twitterFollow']; ?>" target="_blank" title="Twitter">
                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x"
                                  width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                  fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -82,7 +82,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="GitHub">
+                           <a href="<?php echo $companyData['facebookPage']; ?>" target="_blank" title="facebook">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="facebook">
                                  <path
                                     d="M13 24.002h-3a.5.5 0 0 1-.5-.5v-10.5H6a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5h3.5v-3.5c0-3.033 2.468-5.5 5.5-5.5h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5h-3c-.827 0-1.5.673-1.5 1.5v3.5H18c.161 0 .312.077.405.208.095.13.12.298.069.451l-1 3a.501.501 0 0 1-.475.342h-3.5v10.5a.498.498 0 0 1-.499.499zm-2.5-1h2v-10.5a.5.5 0 0 1 .5-.5h3.64l.667-2H13a.5.5 0 0 1-.5-.5v-4c0-1.378 1.121-2.5 2.5-2.5h2.5v-2H15a4.505 4.505 0 0 0-4.5 4.5v4a.5.5 0 0 1-.5.5H6.5v2H10a.5.5 0 0 1 .5.5v10.5z">
@@ -91,7 +91,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Discord">
+                           <a href="<?php echo $companyData['facebookPage']; ?>" target="_blank" title="instagram">
                               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="instagram">
                                  <path
                                     d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z">
@@ -104,7 +104,7 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Youtube">
+                           <a href="<?php echo $companyData['youtubeVideo']; ?>" target="_blank" title="Youtube">
                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
                                  width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                  fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -125,19 +125,24 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                      <h3>About Us</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Features">Introduction</a>
+                           <a href="<?php echo "main/".base64_encode("introduction"); ?>" 
+                           title="Features">Introduction</a>
                         </li>
                         <li>
-                           <a href="#" title="Auth">Mission, Vision & Values</a>
+                           <a href="<?php echo "main/".base64_encode("mission"); ?>" 
+                           title="Auth">Mission, Vision & Values</a>
                         </li>
                         <li>
-                           <a href="#" title="Functions">Board ot Directors</a>
+                           <a href="<?php echo "main/".base64_encode("boardofdirectors"); ?>" 
+                           title="Functions">Board ot Directors</a>
                         </li>
                         <li>
-                           <a href="#" title="Realtime">Team Member</a>
+                           <a href="<?php echo "main/".base64_encode("managementteam"); ?>" 
+                           title="Realtime">Our Team</a>
                         </li>
                         <li>
-                           <a href="#" title="Storage">Banking hours</a>
+                           <a href="<?php echo "main/".base64_encode("bankinghours"); ?>" 
+                           title="Storage">Banking hours</a>
                         </li>
                      </ul>
                   </section>
@@ -146,16 +151,20 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                      <h3>Support</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Support">Branches</a>
+                           <a href="main/<?php echo base64_encode('branches'); ?>" 
+                           title="Support">Branches</a>
                         </li>
                         <li>
-                           <a href="#" title="Sitemap">Contact Us</a>
+                           <a href="main/<?php echo base64_encode('contactus'); ?>" 
+                           title="Sitemap">Contact Us</a>
                         </li>
                         <li>
-                           <a href="#" title="Newsletter">Downloads</a>
+                           <a href="main/<?php echo base64_encode('download'); ?>" 
+                           title="Newsletter">Downloads</a>
                         </li>
                         <li>
-                           <a href="#" title="Help Centre">FAQ</a>
+                           <a href="main/<?php echo base64_encode('faq'); ?>" 
+                           title="Help Centre">FAQ</a>
                         </li>
                      </ul>
                   </section>
@@ -165,16 +174,20 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                      <h3>Navigation</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Documentation">Home</a>
+                           <a href="main/<?php echo base64_encode('home'); ?>" 
+                           title="Documentation">Home</a>
                         </li>
                         <li>
-                           <a href="#" title="Changelog">Notices</a>
+                           <a href="main/<?php echo base64_encode('download'); ?>" 
+                           title="Changelog">Notices</a>
                         </li>
                         <li>
-                           <a href="#" title="Contributing">Grienvance</a>
+                           <a href="main/<?php echo base64_encode('contactus'); ?>" 
+                           title="Contributing">Grienvance</a>
                         </li>
                         <li>
-                           <a href="#" title="OpenSource">NRB Gunaso Portal</a>
+                           <a href="https://gunaso.nrb.org.np/" target="_blank"
+                           title="OpenSource">NRB Gunaso Portal</a>
                         </li>
                      </ul>
                   </section>
@@ -182,27 +195,28 @@ background: linear-gradient(90deg, rgba(31,36,31,1) 0%, rgba(56,55,55,0.96962535
                      <h3>Others</h3>
                      <ul>
                         <li>
-                           <a href="#" title="Terms and services">
+                           <a href="main/<?php echo base64_encode('career'); ?>"
+                           title="Terms and services">
                               Career
                            </a>
                         </li>
                         <li>
-                           <a href="./calculator.php" title="Privacy Policy">
+                           <a href="https://salapabikasbank-utility.netlify.app/" target="_blank" title="Privacy Policy">
                               Calculator
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Careers">
+                           <a href="files/contentFile/calender.pdf" title="Careers">
                               Calender
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Company">
+                           <a href="<?php echo "main/".base64_encode("interestrate"); ?>" title="Company">
                               Interest Rate
                            </a>
                         </li>
                         <li>
-                           <a href="#" title="Company">
+                           <a href="<?php echo "main/".base64_encode("gallery"); ?>" title="Company">
                               Gallery
                            </a>
                         </li>

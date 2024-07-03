@@ -333,7 +333,33 @@
             </a>
         </div>
     </div>
-    
+    <div class="ac-pane
+		<?php
+			if($topic=="branches" || $topic=="addBranch" || $topic=="deleteBranch" 
+			|| $topic=="trashBranch" || $topic=="updateBranch"){
+				echo "active";
+			} 
+		?>
+    ">
+        <a href="#" class="ac-title" data-accordion="true">
+            <span>Branch Manage</span>
+            <i class="fa"></i>
+        </a>
+        <div class="ac-content">
+        	<a href="loginsetup.php?topic=branches">
+            	<li>Branch Manage</li>
+            </a>
+            <a href="loginsetup.php?topic=addBranch">
+            	<li>Add New Branch</li>
+            </a>
+            <a href="loginsetup.php?topic=deleteBranch">
+            	<li>Delete Branch</li>
+            </a>
+            <a href="loginsetup.php?topic=trashBranch">
+            	<li>Trash</li>
+            </a>
+        </div>
+    </div>
     <div class="ac-pane
 		<?php
 			if($topic=="membertype" || $topic=="member" || $topic=="memberAdd" 

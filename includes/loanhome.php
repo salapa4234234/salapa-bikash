@@ -1,6 +1,6 @@
 <div class="container" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
-   <h1 class="new-title">Types of base rate</h1>
+   <h1 class="new-title">Loan Services</h1>
 
    <section class="cards-info" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
       <?php

@@ -4,7 +4,7 @@
 			public $hostname="localhost";
 			public $username="root";
 			public $password="papa2055";
-			public $dbname="salapa";
+			public $dbname="salapanew";
 			function select($a)
 				{
 					

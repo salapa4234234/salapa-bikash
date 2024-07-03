@@ -6,7 +6,8 @@ const handleOpen = () => {
   mainNav.classList.toggle("main-nav--open");
 };
 
-// menuIcon.addEventListener("click", handleOpen);
+
+menuIcon.addEventListener("click", handleOpen);
 
 // document.getElementById("loan-form").addEventListener("submit", function (e) {
 //   alert("hellow nabaraj");

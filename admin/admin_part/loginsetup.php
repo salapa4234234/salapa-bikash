@@ -117,10 +117,10 @@
                             Investor Relations
                         </div>
                     </a>
-                    <a href="loginsetup.php?topic=language">
+                    <a href="loginsetup.php?topic=branches">
                         <div class="menus">
-                            <img src="them_img/language.jpg" /><br />
-                            Language
+                            <img src="them_img/branches.png" /><br />
+                            Branches
                         </div>
                     </a>
                     <a href="loginsetup.php?topic=member">

@@ -181,6 +181,21 @@
 	elseif($topic=="event_festible_remove"){
 		include('admin_includes/event_manager/remove_event.php');
 	}
+	
+	elseif($topic=="branches"){
+		include('admin_includes/branchManager/branchManager.php');
+	}
+	elseif($topic=="addBranch"){
+		include('admin_includes/branchManager/addNewBranch.php');
+	}
+	elseif($topic=="deleteBranch"){
+		include('admin_includes/branchManager/deleteBranch.php');
+	}
+	elseif($topic=="trashBranch"){
+		include('admin_includes/branchManager/trashBranch.php');
+	}
+
+
 	elseif($topic=="membertype"){
 		include('admin_includes/memberManager/membercategory.php');
 	}

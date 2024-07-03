@@ -37,14 +37,13 @@
 if(isset($_POST['faq_edit'])){
 	
 		include('../../../../php/db.php');
-		echo "<br> ".$id=$_POST['id'];
-		echo "<br> ".$question=$obj->sql_inject($_POST['question']);
-		echo "<br> ".$answer=$obj->sql_inject($_POST['answer']);
-		echo "<br> ".$status=$_POST['status'];
-		echo "<br> ".$feature=$_POST['feature'];
-		echo "<br> ".$admin=$_POST['admin'];
-		echo "<br> ".$dates=$_POST['dates'];
-		
+		$id=$_POST['id'];
+		$question=$obj->sql_inject($_POST['question']);
+		$answer=$obj->sql_inject($_POST['answer']);
+		$status=$_POST['status'];
+		$feature=$_POST['feature'];
+		$admin=$_POST['admin'];
+		$dates=$_POST['dates'];
 		
 		$result=$obj->insert("UPDATE `tbl_faq` SET `question`='$question',`answer`='$answer',`status`='$status',
 		`feature`='$feature',`dates`='$dates',

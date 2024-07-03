@@ -1,5 +1,5 @@
-﻿<?php
-	include('includes/db.php');
+<?php
+	include('php/db.php');
 	if(isset($_GET['topic'])){
 		$topic=$_GET['topic'];
 		$topic=$obj->htmlchar($topic);
@@ -95,6 +95,39 @@
    <!-- *************** End Common CSS *************** -->
    <script src='../www.google.com/recaptcha/api.js'></script>
    <link href="assets/frontend/css/pages/home.css" rel="stylesheet" type="text/css" />
+
+
+   <style>
+      html {
+  scroll-behavior: smooth;
+}
+   body{
+      position: relative;
+      height:100vh
+   }
+   .up-arrow-btn{
+      position: fixed;
+      bottom:7rem;
+      right:3rem;
+      z-index: 500;
+      background: #054D05;
+      padding: 0.5rem;
+      height: 4.5rem;
+      width: 4.5rem;
+      border:none;
+      border-radius: 50%;
+      outline:none;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+   }
+   .up-arrow-btn svg{
+    fill:white;
+    font-size:2.5rem;
+    font-weight: 700;
+   }
+   </style>
    <script>
    function site_url(url) {
       return "https://www.civilbank.com.np/" + url;
@@ -173,110 +206,23 @@
    		include('includes/locationtracker.php');
    		include('includes/page_chooser.php');
    ?>
+
    </main>
    <?php
 		include('includes/footer.php');
       include('includes/messenger.php');
-
-	if($topic=="home")
-	{
-?>
-   <div class="popup" role="alert">
-      <div class="pop-overlay"></div>
-      <div class="pop-container">
-         <a href="#" class="popup-close img-replace" id="popup_close">Close</a>
-         <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-               <div class="item active">
-                  <img src="assets/frontend/img/topup_notice/shubhakamana.jpg">
-               </div>
-            </div>
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left"></span>
-               <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right"></span>
-               <span class="sr-only">Next</span>
-            </a>
-         </div>
-      </div>
-      <!-- popup-container -->
-   </div>
+      include('includes/popup.php');
+   ?>
    <?php
-	}
-?>
-   <div class="forex-pop" style="display: none;">
-      <div class="table-responsive">
-         <table class="table forex-table">
-            <thead>
-               <tr>
-                  <th>Branches</th>
-                  <th>Contact Number</th>
-                  <th>Email Address</th>
-                  <th>Contact Person</th>
-               </tr>
-            </thead>
-            <tbody>
-               <tr>
-                  <td>Head Office</td>
-                  <td>036420457</td>
-                  <td>info@sbbank.com.np</td>
-                  <td>Mrs. Sita Rai</td>
-               </tr>
-               <tr>
-                  <td>Diktel Branch</td>
-                  <td>036420638</td>
-                  <td>diktel@sbbank.com.np</td>
-                  <td>Mr. Dipkar Rai</td>
-               </tr>
-               <tr>
-                  <td>Halesi Branch</td>
-                  <td>03641039</td>
-                  <td>halesi@sbbank.com.np</td>
-                  <td>Mr. Bhaskar Shrestha</td>
-               </tr>
-               <tr>
-                  <td>Aiselukharka Branch</td>
-                  <td>036411102</td>
-                  <td>aiselukharka@sbbank.com.np</td>
-                  <td>Mr. Ananda Rai</td>
-               </tr>
-               <tr>
-                  <td>Baksila Branch</td>
-                  <td>9852877111</td>
-                  <td>baksila@sbbank.com.np</td>
-                  <td>Mr. Mahesh Raj Bhandari</td>
-               </tr>
-               <tr>
-                  <td>Simpani Branch</td>
-                  <td>9840126427</td>
-                  <td>simpani@sbbank.com.np</td>
-                  <td>Mr. Saroj Basnet</td>
-               </tr>
-               <tr>
-                  <td>Chisapani Branch</td>
-                  <td>036421021</td>
-                  <td>chisapani@sbbank.com.np</td>
-                  <td>Mr. Sajan Rai</td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-      <button class="close-forex">x</button>
-   </div>
+      include('includes/quickContact.php')
+   ?>
 
    <div class="overlay-light-black"></div>
    <?php
 		if($topic!="gallery"){
 	?>
+         <button onclick="topFunction()"class="up-arrow-btn"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></button>
+
    <script src="assets/frontend/js/common/jquery.min.js" type="text/javascript"></script>
    <?php
 		}
@@ -306,6 +252,13 @@
    <script type="text/javascript" src="test/custom.js"></script>
    <!-- our team -->
    <script src="assets/frontend/js/common/script.js"></script>
+   <script>
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+   </script>
 </body>
 
 </html>
