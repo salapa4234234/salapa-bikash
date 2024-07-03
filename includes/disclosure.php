@@ -22,21 +22,9 @@ details {
     transition: all 0.3s ease-in-out;
 }
 
-details:hover {
-    /* background-color: var(--background-hover); */
-}
 
-/* details:hover svg {
-    stroke: var(--primary-blue);
-} */
 
-details[open] {
-    /* background-color: var(--background-hover); */
-}
 
-/* details[open] .faq-title {
-    color: var(--primary-blue);
-} */
 
 summary {
     user-select: none;
@@ -56,9 +44,6 @@ details[open] summary svg {
     transform: rotate(90deg);
 }
 
-/* summary:hover .faq-title {
-    color: var(--primary-blue);
-} */
 
 summary::-webkit-details-marker {
     display: none;
