@@ -131,7 +131,7 @@ summary:focus {
 </style>
 
 <div class="container">
-    <div class="report-tabs">
+    <div class="report-tabs" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <div class="report-tab">
             <div class="tab">
                 <button class="tablinks active" onclick="openCity(event, 'Financial')">Basel Report</button>
@@ -143,8 +143,9 @@ summary:focus {
             </div>
 
             <div class="tabs-container">
-                <div id="Financial" class="tabcontent" style="display:block">
-                    <div class="faq-container">
+                <div id="Financial" class="tabcontent" style="display:block" data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom">
+                    <div class="faq-container" data-aos="fade-up">
                         <details>
                             <summary>
                                 <span class="faq-title">
@@ -210,7 +211,7 @@ summary:focus {
                     </div>
                 </div>
 
-                <div id="Qarterly" class="tabcontent">
+                <div id="Qarterly" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
@@ -271,7 +272,7 @@ summary:focus {
                         </details>
                     </div>
                 </div>
-                <div id="Annual" class="tabcontent">
+                <div id="Annual" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
@@ -336,7 +337,7 @@ summary:focus {
                         </details>
                     </div>
                 </div>
-                <div id="Basel" class="tabcontent">
+                <div id="Basel" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
@@ -398,7 +399,7 @@ summary:focus {
                         </details>
                     </div>
                 </div>
-                <div id="Base" class="tabcontent">
+                <div id="Base" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
@@ -460,7 +461,7 @@ summary:focus {
                         </details>
                     </div>
                 </div>
-                <div id="Loan" class="tabcontent">
+                <div id="Loan" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
@@ -522,7 +523,7 @@ summary:focus {
                         </details>
                     </div>
                 </div>
-                <div id="aml" class="tabcontent">
+                <div id="aml" class="tabcontent" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     <div class="faq-container">
                         <details>
                             <summary>
