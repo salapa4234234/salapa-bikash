@@ -60,7 +60,7 @@ $check=@mail($email_to, $email_subject, $email_message, $headers);
         header('location:../');
  }
 ?>
- 
+
 <?php
  
 }

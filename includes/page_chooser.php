@@ -1,6 +1,6 @@
 <section style="background:#f9f9f9;">
-<div style="background:#f9f9f9; margin-bottom:15px; <?php if($topic=="home") echo "margin-top:0px;"; ?>">
-<?php
+    <div style="background:#f9f9f9; margin-bottom:15px; <?php if($topic=="home") echo "margin-top:0px;"; ?>">
+        <?php
 	if(isset($_GET['websearch'])){
 		include('includes/searchsetup.php');
 	}
@@ -76,7 +76,7 @@
 		include('includes/view_point.php');
 	}
 ?>
-	<div class="clearfix"></div>
-</div>
-<div class="clearfix"></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
 </section>

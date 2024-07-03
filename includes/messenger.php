@@ -11,18 +11,18 @@ chatbox.setAttribute("page_id", "m.me/100844121902599");
 chatbox.setAttribute("attribution", "biz_inbox");
 
 window.fbAsyncInit = function() {
-   FB.init({
-      xfbml: true,
-      version: 'v11.0'
-   });
+    FB.init({
+        xfbml: true,
+        version: 'v11.0'
+    });
 };
 
 (function(d, s, id) {
-   var js, fjs = d.getElementsByTagName(s)[0];
-   if (d.getElementById(id)) return;
-   js = d.createElement(s);
-   js.id = id;
-   js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-   fjs.parentNode.insertBefore(js, fjs);
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 </script>
