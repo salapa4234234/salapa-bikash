@@ -131,7 +131,7 @@ summary:focus {
 </style>
 
 <div class="container">
-    <div class="report-tabs" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+    <div class="report-tabs">
         <div class="report-tab">
             <div class="tab">
                 <button class="tablinks active" onclick="openCity(event, 'Financial')">Basel Report</button>
@@ -143,9 +143,8 @@ summary:focus {
             </div>
 
             <div class="tabs-container">
-                <div id="Financial" class="tabcontent" style="display:block" data-aos="fade-up"
-                    data-aos-anchor-placement="top-bottom">
-                    <div class="faq-container" data-aos="fade-up">
+                <div id="Financial" class="tabcontent" style="display:block">
+                    <div class="faq-container" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                         <details>
                             <summary>
                                 <span class="faq-title">
@@ -169,7 +168,7 @@ summary:focus {
                             </div>
                         </details>
                     </div>
-                    <div class="faq-container">
+                    <div class="faq-container" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                         <details>
                             <summary>
                                 <span class="faq-title">
@@ -189,7 +188,7 @@ summary:focus {
                             </div>
                         </details>
                     </div>
-                    <div class="faq-container">
+                    <div class="faq-container" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom">
                         <details>
                             <summary>
                                 <span class="faq-title">
